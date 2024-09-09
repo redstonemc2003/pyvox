@@ -43,7 +43,15 @@ class Camera:
         self.position += self.right * velocity
 
     def move_up(self, velocity):
-        pass
+        self.position += self.up * velocity
 
     def move_down(self, velocity):
-        pass
+        self.position -= self.up * velocity
+
+    def move_forward(self, velocity):
+        self.position += self.forward * velocity
+
+    def move_back(self, velocity):
+        self.position -= self.forward * velocity
+
+    
